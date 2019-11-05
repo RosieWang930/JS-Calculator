@@ -23,9 +23,9 @@ function fortune() {
   currentOutput.innerHTML = inputFortune.value + ": " + fortuneList[outputIndex];
 }
 
+//Fortune restyle
 currentOutput.addEventListener("mouseover", restyle);
 function restyle() {
-  console.log("here");
   currentOutput.style.color = "rgb("+Math.round(Math.random()*255)+","+Math.round(Math.random()*255)+","+Math.round(Math.random()*255)+")";
   currentOutput.style.fontSize = "3rem";
   currentOutput.style.textShadow = "0px 0px " + Math.round(Math.random()*10) + "px red";
